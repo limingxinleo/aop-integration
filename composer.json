@@ -4,7 +4,8 @@
     "license": "MIT",
     "keywords": [
         "php",
-        "hyperf"
+        "hyperf",
+        "AOP"
     ],
     "description": "AopIntegration",
     "autoload": {
@@ -18,8 +19,7 @@
         }
     },
     "require": {
-        "php": ">=7.2",
-        "ext-swoole": ">=4.5",
+        "php": ">=7.3",
         "hyperf/di": "2.0.*"
     },
     "require-dev": {
@@ -35,10 +35,5 @@
         "test": "co-phpunit -c phpunit.xml --colors=always",
         "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
         "cs-fix": "php-cs-fixer fix $1"
-    },
-    "extra": {
-        "hyperf": {
-            "config": "Hyperf\\AopIntegration\\ConfigProvider"
-        }
     }
 }
