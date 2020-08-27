@@ -20,8 +20,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 ClassLoader::init();
 
+$app = new App();
+
 // 执行HTTP应用并响应
-$http = (new App())->http;
+$http = $app->http;
 
 $response = $http->run();
 

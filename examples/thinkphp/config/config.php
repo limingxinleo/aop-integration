@@ -24,4 +24,7 @@ return [
             ],
         ],
     ],
+    'aspects' => [
+        app\aspect\DebugAspect::class,
+    ],
 ];
