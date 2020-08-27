@@ -9,20 +9,16 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2006-2019 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: liu21st <liu21st@gmail.com>
-// +----------------------------------------------------------------------
-
-// [ 应用入口文件 ]
-
 namespace think;
 
+use Hyperf\AopIntegration\ClassLoader;
+
 require __DIR__ . '/../vendor/autoload.php';
+
+// 初始化 AOP
+! defined('BASE_PATH') && define('BASE_PATH', dirname(__DIR__, 1));
+
+ClassLoader::init();
 
 // 执行HTTP应用并响应
 $http = (new App())->http;

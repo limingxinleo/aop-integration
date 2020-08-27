@@ -9,9 +9,6 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-// | 应用设置
-// +----------------------------------------------------------------------
-
 return [
     // 应用地址
     'app_host' => env('app.host', ''),
