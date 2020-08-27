@@ -23,7 +23,7 @@
         "php": ">=7.1.0",
         "topthink/framework": "^6.0.0",
         "topthink/think-orm": "^2.0",
-        "hyperf/di": "2.0.*",
+        "hyperf/di": "2.0.x-dev",
         "hyperf/utils": "2.0.*"
     },
     "require-dev": {
