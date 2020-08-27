@@ -17,20 +17,22 @@
         {
             "name": "yunwuxin",
             "email": "448901948@qq.com"
-        }        
+        }
     ],
     "require": {
         "php": ">=7.1.0",
         "topthink/framework": "^6.0.0",
-        "topthink/think-orm": "^2.0"
+        "topthink/think-orm": "^2.0",
+        "hyperf/di": "2.0.*"
     },
     "require-dev": {
-        "symfony/var-dumper": "^4.2",
+        "symfony/var-dumper": "^5.0",
         "topthink/think-trace":"^1.0"
     },
     "autoload": {
         "psr-4": {
-            "app\\": "app"
+            "app\\": "app",
+            "Hyperf\\AopIntegration\\": "../../src"
         },
         "psr-0": {
             "": "extend/"
@@ -44,5 +46,11 @@
             "@php think service:discover",
             "@php think vendor:publish"
         ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer"
+        }
     }
 }
