@@ -1,4 +1,14 @@
 <?php
+
+declare(strict_types=1);
+/**
+ * This file is part of Hyperf.
+ *
+ * @link     https://www.hyperf.io
+ * @document https://hyperf.wiki
+ * @contact  group@hyperf.io
+ * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ */
 namespace app;
 
 use think\db\exception\DataNotFoundException;
@@ -11,12 +21,12 @@ use think\Response;
 use Throwable;
 
 /**
- * 应用异常处理类
+ * 应用异常处理类.
  */
 class ExceptionHandle extends Handle
 {
     /**
-     * 不需要记录信息（日志）的异常类列表
+     * 不需要记录信息（日志）的异常类列表.
      * @var array
      */
     protected $ignoreReport = [
@@ -28,11 +38,7 @@ class ExceptionHandle extends Handle
     ];
 
     /**
-     * 记录异常信息（包括日志或者其它方式记录）
-     *
-     * @access public
-     * @param  Throwable $exception
-     * @return void
+     * 记录异常信息（包括日志或者其它方式记录）.
      */
     public function report(Throwable $exception): void
     {
@@ -43,10 +49,7 @@ class ExceptionHandle extends Handle
     /**
      * Render an exception into an HTTP response.
      *
-     * @access public
-     * @param \think\Request   $request
-     * @param Throwable $e
-     * @return Response
+     * @param \think\Request $request
      */
     public function render($request, Throwable $e): Response
     {

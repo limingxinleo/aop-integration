@@ -1,13 +1,22 @@
 <?php
-// 事件定义文件
+
+declare(strict_types=1);
+/**
+ * This file is part of Hyperf.
+ *
+ * @link     https://www.hyperf.io
+ * @document https://hyperf.wiki
+ * @contact  group@hyperf.io
+ * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ */
 return [
-    'bind'      => [
+    'bind' => [
     ],
 
-    'listen'    => [
-        'AppInit'  => [],
-        'HttpRun'  => [],
-        'HttpEnd'  => [],
+    'listen' => [
+        'AppInit' => [],
+        'HttpRun' => [],
+        'HttpEnd' => [],
         'LogLevel' => [],
         'LogWrite' => [],
     ],
