@@ -20,14 +20,14 @@
     },
     "require": {
         "php": ">=7.3",
-        "hyperf/di": "2.0.*",
-        "hyperf/pimple": "2.0.*",
-        "hyperf/utils": "2.0.*"
+        "hyperf/di": "^2.0",
+        "hyperf/pimple": "^2.0",
+        "hyperf/utils": "^2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
         "phpstan/phpstan": "^0.12",
-        "hyperf/testing": "2.0.*",
+        "hyperf/testing": "^2.0",
         "swoole/ide-helper": "dev-master"
     },
     "config": {
