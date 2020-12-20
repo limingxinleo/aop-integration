@@ -1,5 +1,7 @@
 # Aop Integration
 
+本组件不再维护，请使用 [hyperf/aop-integration](https://github.com/hyperf/aop-integration)
+
 ## 安装
 
 ```
